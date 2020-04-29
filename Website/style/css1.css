@@ -159,7 +159,7 @@ body {
 
 .item {
     margin: 0;
-    width: 85em;
+    width: 100%;
     
     transition-duration: 0.5s;
     overflow: hidden;
