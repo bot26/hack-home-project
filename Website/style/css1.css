@@ -151,8 +151,12 @@ body {
     z-index: 2;
     border-bottom: solid 2px #CC944B ;
 }
+.second-half {
+    height: 85em;
+    background-color: #000;
+}
 .owl-carousel {
-    height: 640px;
+    height: 100%;
     background-color: #242424;
     padding: 0;
 }
@@ -175,6 +179,7 @@ p {
 }
 .item:hover .img-fluid {
     transform: scale(1.2 , 1.2);
+    opacity: 0.2;
     
     
 
