@@ -1,8 +1,61 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="style/gifts.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
     </head>
     <body>
-        
+        <nav class="navbar">
+            <div class="search-box">
+                <input type="text" name="search" id="searchbar" placeholder="Search">
+                <a href="" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <button type="button" class="btn">HOME</button>
+            <button type="button" class="btn">WATCH</button>
+            <button type="button" class="btn">GIFTS</button>
+            <button type="button" class="btn btn-right">NEWS</button>
+            <a href="login.html"><button type="button" class="btn-buytickets">Log In</button></a>
+        </nav>
+        <div class="gifts" id="gifts">
+            <div class="choose-game">
+                <h1>CHOOSE YOUR GAME</h1>
+                <div class="gift lol">
+                    <img class="image" src="rsc/lol.jpg" alt="">
+                </div>
+                <div class="gift fortnite">
+                    <img class="image" src="rsc/fortnite-logo.png" alt="">
+                </div>
+                <div class="gift pubg">
+                    <img class="image" src="rsc/pubg-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="lol-gifts">
+            <div class="gift">
+            <img src="rsc/lolbg.jpg.png" alt="">
+            <img src="rsc/rp1.png" alt="" class="rp">
+            </div>
+            <div class="gift">
+                <img src="rsc/lolbg.jpg.png" alt="">
+                <img src="rsc/rp2.png" alt="" class="rp">
+                </div>
+            <div class="gift">
+                <img src="rsc/lolbg.jpg.png" alt="">
+                <img src="rsc/rp3.png" alt="" class="rp">
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+        <script src="jquery/jquery.js"></script>
+        <script src="jquery/jquery.min.js"></script>
+        <script>
+            $('.lol').click(function(){
+                $('.choose-game').slideUp();
+                $('.lol-gifts').slideDown();
+            })
+        </script>
     </body>
 </html>
