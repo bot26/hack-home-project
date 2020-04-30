@@ -1,0 +1,34 @@
+a{
+    color: #CC954C;
+    padding: 14px 20px;  
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 11pt;
+    font-family:'Montserrat', sans-serif;
+    background: transparent;
+    border-color: #CC954C;
+    border-style: solid;
+    transition: 0.2s;
+    outline: none;  
+    display: block;
+}
+a:hover{
+    color: #000;
+    background-color: #CC954C;
+    box-shadow: 0 0 10px #CC954C ;
+    transition-delay: 0.07s;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3B3635;
+} 
+#precedent{
+    float: left; 
+}
+#next{
+    float: right;
+   
+}

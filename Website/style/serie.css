@@ -356,7 +356,126 @@ h2{
     width: 18%;
     display: inline;
 }
-.show:hover  .show-img {
+.show:hover a .show-img {
+    transform: scale(1.1 , 1.1);
+}
+p {
+    font-size: 500px;
+}
+
+.main {
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/019/690/862/large/jacob-noble-img-1222-01.jpg?1564598452+);
+    height: 1000px;
+}
+.item:hover .img-fluid {
+    transform: scale(1.2 , 1.2);
+    opacity: 0.2;
+    
+    
+
+}
+.name {
+    margin: 0;
+    padding: 25px;
+    font-size: 20pt;
+    position: absolute;
+    bottom:0;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    font-family:'Montserrat', sans-serif;
+    color: transparent;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+    
+    transition-duration: 0.3s;
+}
+
+.item:hover .name {
+    display: unset;
+    transform: translate(0, 60%);
+    color: white;
+}
+.owl-next {
+    right: 0;
+}
+.owl-prev {
+    left: 0;
+}
+.owl-next,.owl-prev {
+    margin: 0;
+    background-color: transparent!important;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    color: transparent!important;
+    border: none;
+    padding: 0!important;
+    opacity: 0.7;
+    top: 40%;
+    direction: ltr;
+    outline: none;
+    transition-duration: 0.3s;
+    
+}
+.owl-carousel:hover .owl-next {
+    background-color: black!important;
+    color: white!important;
+    opacity: 0.5;
+    
+}
+.owl-carousel:hover .owl-prev {
+    background-color: black!important;
+    color: white!important;
+    opacity: 0.5;
+    
+}
+.owl-carousel:hover .owl-next {
+    right: 1rem;
+}
+.owl-carousel:hover .owl-prev {
+    left: 1rem;
+}
+.owl-next:hover,.owl-prev:hover {
+    opacity: 1!important;
+}
+.owl-dot {
+    outline: none;
+}
+.img-fluid {
+    height: 600px;
+    
+    
+}
+h1 {
+    
+    text-align: center;
+    color: white;
+    font-size: 50pt;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+    
+}
+h2{
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 20pt;
+}
+.show-img {
+    max-width: 100%;
+    width: 18%;
+    margin: 11px;
+    transition-duration: 2s;
+}
+.show {
+    width: 18%;
+    display: inline;
+}
+.show:hover a .show-img {
     transform: scale(1.1 , 1.1);
 }
 
@@ -403,3 +522,26 @@ p{
     box-shadow: 0 0 10px #CC954C ;
     transition-delay: 0.07s;
 }
+a\.hom{
+    color: #CC954C;
+    padding: 14px 20px;  
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 11pt;
+    font-family:'Montserrat', sans-serif;
+    background: transparent;
+    border-color: #CC954C;
+    border-style: solid;
+    transition: 0.2s;
+    outline: none;  
+    display: block;
+}
+a\.hom:hover{
+    color: #000;
+    background-color: #CC954C;
+    box-shadow: 0 0 10px #CC954C ;
+    transition-delay: 0.07s;
+}
+
