@@ -15,7 +15,7 @@
 
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <div class="search-box">
                 <input type="text" name="search" id="searchbar" placeholder="Search">
                 <a href="" class="search-btn">
@@ -111,6 +111,21 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+
+         var LastScrollTop = 0;
+         navbar = document.getElementById("navbar");
+         window.addEventListener("scroll", function(){
+
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > LastScrollTop){
+                
+                navbar.style.top = "-100px";
+            }else {
+                 navbar.style.top = "0px";
+            }
+            LastScrollTop = scrollTop;
+         })
+     
 
 
      </script> 
