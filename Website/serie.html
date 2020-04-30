@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/css1.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1527706cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>serie</title>
+</head>
+<body>
+    <nav class="navbar">
+  
+        <div class="col-md-1"><button type="button" class="btn">HOME</button></div>
+        <div class="col-md-1"><button type="button" class="btn">PRICE</button></div>
+        <div class="col-md-1"><button type="button" class="btn">BUY</button></div>
+        <div class="col-md-1"><button type="button" class="btn btn-right">NEWS</button></div>
+        <div class="col-md-2"><button type="button" class="btn-buytickets">Log In</button></div>
+    </nav>
+    <div id="para">
+        <p id="résumé">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quaerat incidunt omnis architecto repellendus ea fugit repudiandae officiis harum corporis non rem consequatur rerum exercitationem odit sapiente dolores nesciunt magni.</p>
+    </div>
+    <div id="img">
+        <img id="prese" src="https://www.nautiljon.com/images/more/01/40/141704.jpg" alt="">
+    </div>
+    <center><div id="seasons">
+        <button id="link1" onclick="season1()" class="seas">season 1</button>
+        <button id="link2" onclick="season2()" class="seas">season 2</button>
+        <button id="link3" onclick="season3()" class="seas">season 3</button>
+        <div id="content1" style="background-color:darkorange;" style="display:none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero delectus vero eum. Rem ullam hic eius aut, dignissimos quisquam sint mollitia, vitae labore veniam at! Iusto quisquam doloremque earum.</p></div>
+        <div id="content2" style="background-color:darkgreen;" style="display:none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero delectus vero eum. Rem ullam hic eius aut, dignissimos quisquam sint mollitia, vitae labore veniam at! Iusto quisquam doloremque earum.</p></div>
+        <div id="content3" style="background-color:#12789c" style="display:none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero delectus vero eum. Rem ullam hic eius aut, dignissimos quisquam sint mollitia, vitae labore veniam at! Iusto quisquam doloremque earum.</p></div>
+    </div>
+    </center>
+    <script>
+        function season1() {
+  var x = document.getElementById("content1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function season2() {
+  var x = document.getElementById("content2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function season3() {
+  var x = document.getElementById("content3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
+</body>
+</html>
+<html></html>
