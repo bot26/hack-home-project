@@ -231,7 +231,7 @@ sub {
     width: 100%;
     
     transition-duration: 0.5s;
-   /* overflow: hidden;*/
+   overflow: hidden;
 }
 
 p {
