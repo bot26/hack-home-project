@@ -11,11 +11,10 @@
         <link rel="stylesheet" href="style/animate.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
 
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar" >
             <div class="search-box">
                 <input type="text" name="search" id="searchbar" placeholder="Search">
                 <a href="" class="search-btn">
@@ -31,35 +30,20 @@
         </nav>
         <div class="owl-carousel owl-theme">
         
-            <a href=""><div class="item">
-                <img src="rsc/EErO5_jWkAA53iQ.jpg" alt="League of Legends" class="img-fluid">
-                <p class="slide-text">Get free <b>Riot Points</b> by watching <br>in our website</p>
-                <p class="details">Sign In to your account, watch videos, <br> enter your League of Legends account <br> recieve free Riot Points as a reward.</p>
-                <button type="button" class="game-reward">Get Now</button>
-            </div></a>
-            <a href=""><div class="item">
-                <img src="rsc/fortnite.jpg" alt="Fortnite" class="img-fluid">
-                <p class="slide-text">Get free <b>V-bucks</b> Right Now!!</p>
-                <p class="details">Sign In to your account, watch videos, <br> enter your Epic Games account <br> recieve free V-bucks as a reward.</p>
-                <button type="button" class="game-reward">Get Now</button>
-            </div></a>
-            <a href=""><div class="item">
-                <img src="rsc/csgo.jpg" alt="CS GO" class="img-fluid">
-                <p class="slide-text" style="font-size: 35pt;">This is the best opportunity to get <br> CSGO <b>Skins</b> now !!</p>
-            </div></a>
-            <a href=""><div class="item">
-                <img src="rsc/pubg.jpg" alt="PUBG" class="img-fluid">
-                <p class="slide-text">Get free <b>Battle Points</b> by watching <br>in our website</p>
-                <p class="details">Sign In to your account, watch videos, <br> enter your PUBG account <br> recieve free Battle Points as a reward.</p>
-                <button type="button" class="game-reward">Get Now</button>
-            </div></a>
-            <a href=""><div class="item">
-                <img src="rsc/Minecraft.jpg" alt="Minecraft" class="img-fluid">
-                <p class="slide-text">Get free <b>Minecraft Premium Accounts</b> by watching <br>in our website</p>
-                <p class="details">Sign In to your account, watch videos, <br> get free Minecraft Premium Accounts as a reward. <br> <sub>Limited</sub></p>
-
-            </div></a>
-        </div>
+            <a href=""><div class="item"><img src="rsc/EErO5_jWkAA53iQ.jpg" alt="One Piece" class="img-fluid"> <p class="name">One Piece</p></div></a>
+            <a href=""><div class="item"><img src="rsc/fortnite.jpg" alt="Boku No Hero Academia" class="img-fluid"><p class="name">Boku No Hero Academia</p></div></a>
+            <a href=""><div class="item"><img src="rsc/csgo.jpg" alt="Black Clover" class="img-fluid"><p class="name">Black Clover</p></div></a>
+            <a href=""><div class="item"><img src="rsc/minecraft.jpg" alt="Nanatsu No Taizai" class="img-fluid"><p class="name">Nanatsu No Taizai</p></div></a>
+            <a href=""><div class="item"><img src="rsc/boruto.png" alt="Boruto: Naruto Next Generations" class="img-fluid"><p class="name" style="font-size: 17pt;">Boruto: Naruto Next Generations </p></div></a>
+            <a href=""><div class="item"><img src="rsc/rezero.png" alt="Re;Zero" class="img-fluid"><p class="name" style="font-size: 17pt;"><b>Re:Zero</b> Kara Hajimeru Isekai Seikatsu</p></div></a>
+            <a href=""><div class="item"><img src="rsc/dorohedoro.png" alt="Dorohedoro" class="img-fluid"><p class="name">Dorohedoro</p></div></a>
+            <a href=""><div class="item"><img src="rsc/id-invaded.png" alt="ID Invaded" class="img-fluid"><p class="name">ID:Invaded</p></div></a>
+            <a href=""><div class="item"><img src="rsc/Darwin_s_Game.png" alt="Darwin's Game" class="img-fluid"><p class="name">Darwin's Game</p></div></a>
+            <a href=""><div class="item"><img src="rsc/haikyuu-to-the-top.png" alt="Haikyuu To The Top" class="img-fluid"><p class="name">Haikyuu To The Top</p></div></a>
+            <a href=""><div class="item"><img src="rsc/conan.png" alt="Conan" class="img-fluid"><p class="name">Detective Conan</p></div></a>
+            <a href=""><div class="item"><img src="rsc/one-piece-stampede.png" alt="One Piece Movie: Stampede" class="img-fluid"><p class="name" style="font-size: 17pt;">One Piece Movie: Stampede</p></div></a>
+        
+    </div>
         <div class="second-half">
             <h1>Watch your Favorite Series and Movies</h1>
             <div class="series">
@@ -89,8 +73,6 @@
 
 
             </div>
-        </div>
-        
     <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script> 
@@ -113,8 +95,22 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
-
      </script> 
+     <script type="text/javascript">
+         var LastScrollTop = 0;
+         navbar = document.getElementById("navbar");
+         window.addEventListener("scroll", function(){
+
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > LastScrollTop){
+                
+                navbar.style.top = "-100px";
+            }else {
+                 navbar.style.top = "0px";
+            }
+            LastScrollTop = scrollTop;
+         })
+     </script>
         <!--
         <script src="js/main.js">
             const canvas=document.querySelector('canvas')

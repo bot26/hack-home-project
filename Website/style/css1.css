@@ -32,13 +32,13 @@ body {
     
 }
 
-
 .navbar .btn:hover {
     color: #000;
     background-color: #CC954C;
     box-shadow: 0 0 10px #CC954C ;
     transition-delay: 0.07s;
 }
+
 
 
 .logo{
@@ -154,6 +154,7 @@ body {
     height: 100px;
     z-index: 2;
     border-bottom: solid 2px #CC944B ;
+   
 }
 .second-half {
     height: 85em;
