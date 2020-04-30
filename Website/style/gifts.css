@@ -148,7 +148,7 @@ body {
     background: url('../rsc/summoners.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 75%;
+    height: 80%;
 }
 .image{
     opacity: 0.5;
@@ -197,4 +197,52 @@ img{
 }
 footer{
     background-color: #1A1A1A;
+}
+.fa-arrow-left {
+    color: white;
+    margin: 20px;
+    font-size: 200%;
+}
+.g {
+    top: 0;
+    
+}
+.game-account {
+    transform: translate(50%,10%);
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 2px #CC954C;
+}
+.input {
+    padding: 10px;
+    font-size: 15pt;
+    margin: 10px;
+    background-color: #1A1A1A;
+    border: solid 2px #E3B049;
+    outline: none;
+    border-radius: 25px;
+    transition: all ease 1s;
+    color: white;
+}
+.input:focus{
+    width: 50%;
+    border-color:#CC954C ;  
+}
+.title {
+    color: white;
+    font-size: 30pt;
+    text-align: left;
+    margin: 5%;
+    font-family: 'Barlow Semi Condensed';
+}
+.submit {
+    margin: 5%;
+    left: 90%;
+    padding: 1% 5%;
+    border-radius: 20px;
+    background-color: #CC954C;
+    outline: none;
+    border: solid 2px #CC954C;
 }

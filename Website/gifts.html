@@ -3,6 +3,8 @@
         <link rel="stylesheet" href="style/gifts.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/a1527706cd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <nav class="navbar">
@@ -12,15 +14,17 @@
                     <i class="fas fa-search"></i>
                 </a>
             </div>
-            <button type="button" class="btn">HOME</button>
+            <a href="index.html"><button type="button" class="btn">HOME</button></a>
             <button type="button" class="btn">WATCH</button>
-            <button type="button" class="btn">GIFTS</button>
+            <a href=""><button type="button" class="btn">GIFTS</button></a>
             <button type="button" class="btn btn-right">NEWS</button>
             <a href="login.html"><button type="button" class="btn-buytickets">Log In</button></a>
         </nav>
         <div class="gifts" id="gifts">
+            <i class="fas fa-arrow-left" style="display: none;"></i>
             <div class="choose-game">
                 <h1>CHOOSE YOUR GAME</h1>
+
                 <div class="gift lol">
                     <img class="image" src="rsc/lol.jpg" alt="">
                 </div>
@@ -31,31 +35,112 @@
                     <img class="image" src="rsc/pubg-logo.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="lol-gifts">
-            <div class="gift">
-            <img src="rsc/lolbg.jpg.png" alt="">
-            <img src="rsc/rp1.png" alt="" class="rp">
-            </div>
-            <div class="gift">
+            <div class="lol-gifts g" style="display: none;">
+                <div class="gift">
                 <img src="rsc/lolbg.jpg.png" alt="">
-                <img src="rsc/rp2.png" alt="" class="rp">
+                <img src="rsc/rp1.png" alt="" class="rp">
                 </div>
-            <div class="gift">
-                <img src="rsc/lolbg.jpg.png" alt="">
-                <img src="rsc/rp3.png" alt="" class="rp">
+                <div class="gift">
+                    <img src="rsc/lolbg.jpg.png" alt="">
+                    <img src="rsc/rp2.png" alt="" class="rp">
+                    </div>
+                <div class="gift">
+                    <img src="rsc/lolbg.jpg.png" alt="">
+                    <img src="rsc/rp3.png" alt="" class="rp">
+                </div>
+            </div>
+            <div class="fortnite-gifts g" style="display: none;">
+                <div class="gift">
+                <img src="rsc/fortnitebg.png" alt="">
+                <img src="rsc/vbucks1.png" alt="" class="rp">
+                </div>
+                <div class="gift">
+                    <img src="rsc/fortnitebg.png" alt="">
+                    <img src="rsc/vbucks2.png" alt="" class="rp">
+                    </div>
+                <div class="gift">
+                    <img src="rsc/fortnitebg.png" alt="">
+                    <img src="rsc/vbucks3.png" alt="" class="rp">
+                </div>
+            </div>
+            <div class="pubg-gifts g" style="display: none;">
+                <div class="gift">
+                <img src="rsc/pubgbg.png" alt="">
+                <img src="rsc/bp1.png" alt="" class="rp">
+                </div>
+                <div class="gift">
+                    <img src="rsc/pubgbg.png" alt="">
+                    <img src="rsc/bp2.png" alt="" class="rp">
+                    </div>
+                <div class="gift">
+                    <img src="rsc/pubgbg.png" alt="">
+                    <img src="rsc/bp3.png" alt="" class="rp">
+                </div>
             </div>
         </div>
+        <div class="game-account">
+            <p class="title">We need your game account to transfer the points</p>
+            <input type="text" placeholder="Email or Username" class="input"> <br>
+            <input type="password" placeholder="Password" class="input"> <br>
+            <input type="submit" value="Submit" class="submit">
+        </div>
+        
         <footer>
 
         </footer>
         <script src="jquery/jquery.js"></script>
         <script src="jquery/jquery.min.js"></script>
         <script>
+            $(document).ready(function(){
+            $('.game-account').hide();
+            
             $('.lol').click(function(){
-                $('.choose-game').slideUp();
-                $('.lol-gifts').slideDown();
+                
+                $('.choose-game').slideUp().promise().done(function(){
+                    $('.fa-arrow-left').removeAttr("style");
+                    $('.lol-gifts').removeAttr("style");
+                });
+                
+                $('.fa-arrow-left').click(function(){
+                    $('.choose-game').slideDown();
+                    $('.fa-arrow-left').attr("style","display: none;");
+                    $('.lol-gifts').attr("style","display: none;");
+                    $('.game-account').slideUp();
+                });
+            });
+            $('.fortnite').click(function(){
+                
+                $('.choose-game').slideUp().promise().done(function(){
+                    $('.fa-arrow-left').removeAttr("style");
+                    $('.fortnite-gifts').removeAttr("style");
+                });
+                
+                $('.fa-arrow-left').click(function(){
+                    $('.choose-game').slideDown();
+                    $('.fa-arrow-left').attr("style","display: none;");
+                    $('.fortnite-gifts').attr("style","display: none;");
+                    $('.game-account').slideUp();
+                    
+                });
+            });
+            $('.pubg').click(function(){
+                
+                $('.choose-game').slideUp().promise().done(function(){
+                    $('.fa-arrow-left').removeAttr("style");
+                    $('.pubg-gifts').removeAttr("style");
+                });
+                
+                $('.fa-arrow-left').click(function(){
+                    $('.choose-game').slideDown();
+                    $('.fa-arrow-left').attr("style","display: none;");
+                    $('.pubg-gifts').attr("style","display: none;");
+                    $('.game-account').slideUp();
+                });
+            });
+            $('.g').click(function(){
+                $('.game-account').slideDown();
             })
+        });
         </script>
     </body>
 </html>
