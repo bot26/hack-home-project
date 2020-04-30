@@ -130,7 +130,7 @@ input[type="password"] {
     letter-spacing: 2px;
 }
 a.pass {
-    font-size: 15px;
+    font-size: 10px;
 	    color: #efbb42;
 		font-family: 'Open Sans', sans-serif;
 		    letter-spacing: 2px;
@@ -155,18 +155,19 @@ input[type="submit"] {
     border-radius: 25px;
     font-size: 18px;
     border: none;
-    background-color: transparent;
-    color: #fff;
+     color: #fff;
+    background-color:  rgba(200, 149, 79, 1);
     text-transform: uppercase;
     outline: 0;
-    border: 1px solid #4f5d61;
+    
 	cursor: pointer;
 	    width: 100%;
 	    letter-spacing: 1px;	
 }
 input[type="submit"]:hover {
-    color: #fff;
-    background-color:  rgba(200, 149, 79, 1);
+   
+    background-color: #ffffff;
+    color: rgba(200, 149, 79, 1);
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ccc6c6;
