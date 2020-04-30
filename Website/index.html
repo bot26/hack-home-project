@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
-
+ <style type="text/css" src="style\footer.css"></style>
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <div class="search-box">
                 <input type="text" name="search" id="searchbar" placeholder="Search">
                 <a href="" class="search-btn">
@@ -112,22 +112,27 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
+         var LastScrollTop = 0;
+         navbar = document.getElementById("navbar");
+         window.addEventListener("scroll", function(){
+
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > LastScrollTop){
+                
+                navbar.style.top = "-100px";
+            }else {
+                 navbar.style.top = "0px";
+            }
+            LastScrollTop = scrollTop;
+         })
+     
+
 
      </script> 
-        <!--
-        <script src="js/main.js">
-            const canvas=document.querySelector('canvas')
-            const c = canvas.getContext('2d')
-        
-            canvas.width = innerWidth
-            canvas.height = innerHeight
-            c.beginPath()
-        
-            c.moveTo(0, canvas.height / 2)
-            c.lineTo(canvas.width,canvas.height / 2)
-            c.stroke()
-        </script>    
-        -->
+      
+
+
+
     </body>
 
 </html>
