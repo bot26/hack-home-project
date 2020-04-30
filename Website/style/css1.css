@@ -343,7 +343,7 @@ h2{
 .show-img {
     max-width: 100%;
     
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .show {
     width: 18%;
@@ -352,7 +352,7 @@ h2{
     overflow: hidden;
 }
 .show:hover  .show-img {
-    transform: scale(1.1 , 1.1);
+    transform: scale(1.2 , 1.2);
 }
 
 p{
