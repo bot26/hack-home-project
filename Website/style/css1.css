@@ -345,21 +345,49 @@ h2{
     
     transition-duration: 1s;
 }
+
 .show {
     width: 18%;
     display: inline-block;
     margin: 11px;
     overflow: hidden;
+    background-color: #242424;
+}
+@media(max-width: 1000px){
+    .show {
+        width: 17%;
+        display: inline-block;
+        margin: 11px;
+        overflow: hidden;
+        background-color: #242424;
+    }
 }
 .show:hover  .show-img {
     transform: scale(1.2 , 1.2);
+    opacity: 0.2;
+}
+.show:hover .show-name {
+    display: unset;
+    transform: translate(0, 60%);
+    color: white;
+}
+.show-name {
+    margin: 0;
+    font-size: 95%;
+    position: absolute;
+    z-index: 99;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+    transition-duration: 0.3s;
 }
 
-p{
+/*p{
     font-size: 16px;
     font-family:'Montserrat';
     color: #fff;
-}
+}*/
 #para{
     width: 65%;
     float: right;

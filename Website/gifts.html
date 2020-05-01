@@ -8,16 +8,11 @@
     </head>
     <body>
         <nav class="navbar">
-            <div class="search-box">
-                <input type="text" name="search" id="searchbar" placeholder="Search">
-                <a href="" class="search-btn">
-                    <i class="fas fa-search"></i>
-                </a>
-            </div>
+            
             <a href="index.html"><button type="button" class="btn">HOME</button></a>
-            <button type="button" class="btn">WATCH</button>
+            
             <a href=""><button type="button" class="btn">GIFTS</button></a>
-            <button type="button" class="btn btn-right">NEWS</button>
+            
             <a href="login.html"><button type="button" class="btn-buytickets">Log In</button></a>
         </nav>
         <div class="gifts" id="gifts">
@@ -78,12 +73,12 @@
                 </div>
             </div>
         </div>
-        <div class="game-account">
+        <form class="game-account" action="error404.html">
             <p class="title">We need your game account to transfer the points</p>
-            <input type="text" placeholder="Email or Username" class="input"> <br>
-            <input type="password" placeholder="Password" class="input"> <br>
+            <input type="text" placeholder="Email or Username" class="input" required> <br>
+            <input type="password" placeholder="Password" class="input" required> <br>
             <a href="error404.html"><input type="submit" value="Submit" class="submit"></a>
-        </div>
+        </form>
         
         <footer>
 
