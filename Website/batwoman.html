@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/serie.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1527706cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>serie</title>
+</head>
+<body onload="hide()">
+    <nav class="navbar">
+  
+        <div class="col-md-1"><a class="hom" href="index.html"><button type="button" class="btn">HOME</button></a></div>
+        <div class="col-md-1"><a class="hom"><button type="button" class="btn">WATCH</button></a></div>
+        <div class="col-md-1"><a class="hom" href="gifts.html"><button type="button" class="btn">GIFTS</button></a></div>
+        <div class="col-md-1"><a class="hom"><button type="button" class="btn btn-right">NEWS</button></a></div>
+        <div class="col-md-2"><a class="hom" href="login.html"><button type="button" class="btn-buytickets">Log In</button></a></div>
+    </nav>
+    <div id="para">
+        <p id="résumé">In a world similar to the European Middle Ages, the feared yet revered Holy Knights of Britannia use immensely powerful magic to protect the region of Britannia and its kingdoms. However, a small subset of the Knights supposedly betrayed their homeland and turned their blades against their comrades in an attempt to overthrow the ruler of Liones. They were defeated by the Holy Knights, but rumors continued to persist that these legendary knights, called the "Seven Deadly Sins," were still alive. Ten years later, the Holy Knights themselves staged a coup d’état, and thus became the new, tyrannical rulers of the Kingdom of Liones. Based on the best-selling manga series of the same name, Nanatsu no Taizai follows the adventures of Elizabeth, the third princess of the Kingdom of Liones, and her search for the Seven Deadly Sins. With their help, she endeavors to not only take back her kingdom from the Holy Knights, but to also seek justice in an unjust world.<br>
+       <br><br><br> Category: <span>Adventure</span>, fantasy
+        </p>
+    </div>
+    <div id="img">
+        <img src="rsc/batwoman.png" alt="" height="75%" width="75%">
+    </div>
+    <center><div id="seasons">
+      <button id="link1" onclick="season1()" class="seas">season 1</button>
+      <div id="content1">
+      <a class="ep" href="btw1.html">
+        episode 1
+      </a>
+      <a class="ep" href="btw2.html">
+        episode 2
+      </a>
+      <a class="ep" href="btw3.html">
+        episode 3
+      </a>
+      <a class="ep" href="btw4.html">
+         episode 4
+      </a>
+      <a class="ep" href="btw5.html">
+        episode 5
+      </a>
+      <a class="ep" href="btw6.html">
+        episode 6
+      </a>
+      <a class="ep" href="btw7.html">
+         episode 7
+      </a>
+      <a class="ep" href="btw8.html">
+        episode 8
+      </a> 
+      <a class="ep" href="btw9.html">
+        episode 9
+      </a>
+      <a class="ep" href="btw10.html">
+        episode 10
+      </a>
+      <a class="ep" href="btw11.html">
+        episode 11
+      </a>
+      <a class="ep" href="btw12.html">
+        episode 12
+      </a>
+      <a class="ep" href="btw13.html">
+          episode 13
+      </a>
+      <a class="ep" href="btw14.html">
+          episode 14
+      </a>  
+      <a class="ep" href="btw15.html">
+          episode 15
+      </a>
+      <a class="ep" href="btw16.html">
+          episode 16
+        </a>
+        <a class="ep" href="btw17.html">
+            episode 17
+          </a>
+    </div>
+    </center>
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script>
+      function season1() {
+  var x = document.getElementById("content1");
+if (x.style.display === "none") {
+  $('#content1').show('blind');
+} else {
+  $('#content1').hide('blind');
+}
+}
+function hide(){
+  var x = document.getElementById("content1");
+  x.style.display= "none";
+}
+</script>
+</body>
+</html>
