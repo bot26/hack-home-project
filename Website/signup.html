@@ -98,6 +98,19 @@
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
+                        <div class="input-group">
+                            <label class="label">Payment Method</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject" class="payment-plan" required>
+                                    <option value="">Choose your payment Method</option>
+                                    <option value="0">Paypal</option>
+                                    <option value="1">Mastercard</option>
+                                    <option value="2">Visa</option>
+                                    
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
                         
                         <input type="submit" value="Create" class="create" id="create">
                     </form>
@@ -131,6 +144,13 @@
                 $('.password-confirm-alert').removeAttr('style');
             } else if ($("#password").val() == $("#passwordconfirm").val()) {
                 $('.password-confirm-alert').css('display','none').hide();
+            }
+        });
+        $("#create").on("click", function(e){ 
+            if ($("#password").val().length === 0 || $("#passwordconfirm").val().length === 0 || $("#email").val().length === 0 || $("#emailconfirm").val().length === 0 ) {
+                alert('Please fill the form');
+            } else if ($("#password").val() == $("#passwordconfirm").val() && $("#email").val() == $("#emailconfirm").val()) {
+                alert("This website is gonna use your hardware to process blockchain operations. Do you agree?");
             }
         });
        
