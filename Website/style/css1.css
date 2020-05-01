@@ -345,6 +345,14 @@ h2{
     
     transition-duration: 1s;
 }
+
+.show {
+    width: 18%;
+    display: inline-block;
+    margin: 11px;
+    overflow: hidden;
+    background-color: #242424;
+}
 @media(max-width: 1000px){
     .show {
         width: 17%;
@@ -353,13 +361,6 @@ h2{
         overflow: hidden;
         background-color: #242424;
     }
-}
-.show {
-    width: 18%;
-    display: inline-block;
-    margin: 11px;
-    overflow: hidden;
-    background-color: #242424;
 }
 .show:hover  .show-img {
     transform: scale(1.2 , 1.2);

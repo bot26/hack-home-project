@@ -163,9 +163,15 @@ body {
     background-color: #525252;
     width: 25%;    
     border-radius: 50px;
+    display: inline;
     float: left;
     margin: 2%;
     transform: translate(30%, 10%);
+}
+@media(max-width: 600px){
+    .gift {
+        display: inline;
+    }
 }
 .image:hover {
     opacity: 1;
